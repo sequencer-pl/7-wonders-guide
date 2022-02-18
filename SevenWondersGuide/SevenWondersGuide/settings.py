@@ -25,12 +25,14 @@ SECRET_KEY = 'django-insecure-$bf=#kgatsse@@hkgr(f#hla^0256!hq&em)b=%@w5j4e)he8q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# TODO change it on prod
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'Guide.apps.GuideConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -121,3 +123,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Media derectories
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / 'media'
