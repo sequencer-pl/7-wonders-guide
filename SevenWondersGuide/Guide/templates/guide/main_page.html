@@ -1,0 +1,9 @@
+{% if card_types %}
+    <ul>
+        {% for card_type in card_types %}
+        <li><a href="/guide/cards/{{ card_type.id }}" /> {{ card_type }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Use admin to fill data</p>
+{% endif %}

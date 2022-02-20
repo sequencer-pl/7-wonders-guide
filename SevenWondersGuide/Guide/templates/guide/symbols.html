@@ -1,0 +1,5 @@
+<ul>
+    {% for symbol in symbols %}
+    <li><a href="/guide/details/{{ symbol.id }}" /> {{ symbol }}</li>
+    {% endfor %}
+</ul>
