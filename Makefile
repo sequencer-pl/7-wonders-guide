@@ -1,6 +1,6 @@
 .PHONY: run-server
 run-server:
-	poetry run python SevenWondersGuide/manage.py runserver 8000
+	poetry run python seven_wonders_guide/manage.py runserver 8000
 
 .PHONY: install
 install:

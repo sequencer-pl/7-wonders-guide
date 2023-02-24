@@ -1,8 +1,8 @@
 import logging
 from django.shortcuts import render
 
-from Guide.models import Card, CardType, Symbol, Wonder, WonderStep
-from Guide.logging import logging_setup
+from guide.models import Card, CardType, Symbol, Wonder, WonderStep
+from guide.logging import logging_setup
 
 logging_setup()
 

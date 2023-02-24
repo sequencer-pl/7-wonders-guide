@@ -1,5 +1,5 @@
 """
-WSGI config for SevenWondersGuide project.
+WSGI config for seven_wonders_guide project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'SevenWondersGuide.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'seven_wonders_guide.settings')
 
 application = get_wsgi_application()

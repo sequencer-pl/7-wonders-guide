@@ -1,5 +1,5 @@
 """
-ASGI config for SevenWondersGuide project.
+ASGI config for seven_wonders_guide project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'SevenWondersGuide.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'seven_wonders_guide.settings')
 
 application = get_asgi_application()

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from Guide.models import Card, CardType, Expansion, Symbol, Wonder, WonderStep
+from guide.models import Card, CardType, Expansion, Symbol, Wonder, WonderStep
 
 admin.site.register(Expansion)
 admin.site.register(Symbol)

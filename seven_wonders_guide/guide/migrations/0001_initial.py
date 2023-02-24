@@ -43,7 +43,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=128)),
                 ('image', models.ImageField(upload_to='wonders/')),
-                ('origin', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Guide.expansion')),
+                ('origin', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='guide.expansion')),
             ],
         ),
         migrations.CreateModel(
@@ -51,8 +51,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('level', models.PositiveSmallIntegerField()),
-                ('symbol', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Guide.symbol')),
-                ('wonder', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Guide.wonder')),
+                ('symbol', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='guide.symbol')),
+                ('wonder', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='guide.wonder')),
             ],
         ),
         migrations.CreateModel(
@@ -60,9 +60,9 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=64)),
-                ('origin', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Guide.expansion')),
-                ('symbol', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Guide.symbol')),
-                ('type', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Guide.cardtype')),
+                ('origin', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='guide.expansion')),
+                ('symbol', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='guide.symbol')),
+                ('type', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='guide.cardtype')),
             ],
         ),
     ]
