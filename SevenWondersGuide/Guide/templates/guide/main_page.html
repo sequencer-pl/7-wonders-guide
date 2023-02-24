@@ -4,6 +4,11 @@
         <li><a href="/guide/cards/{{ card_type.id }}" /> {{ card_type }}</li>
         {% endfor %}
     </ul>
+    <ul>
+        {% for wonder in wonders %}
+        <li><a href="/guide/wonder/{{ wonder.id }}" /> {{ wonder }}</li>
+        {% endfor %}
+    </ul>
 {% else %}
     <p>Use admin to fill data</p>
 {% endif %}

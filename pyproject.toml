@@ -5,9 +5,9 @@ description = ""
 authors = ["sequencer <sequencer@o2.pl>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 Django = "^4.0.2"
-Pillow = "^9.0.1"
+pillow = "^9.4.0"
 
 [tool.poetry.dev-dependencies]
 

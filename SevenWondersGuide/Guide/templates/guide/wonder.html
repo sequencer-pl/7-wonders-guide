@@ -1,0 +1,9 @@
+<h5><a href="{% url 'main_page' %}">Powrót do strony głównej</a></h5>
+<h2>{{ wonder.name }}</h2>
+<img src="/media/{{ wonder.image }}" />
+<br />
+{% for step in steps %}
+<img src="/media/{{ step.symbol.image }}" />
+<p>{{ step.level}}: {{ step.symbol.description }}</p>
+{% endfor %}
+<h5><a href="{% url 'main_page' %}">Powrót do strony głównej</a></h5>

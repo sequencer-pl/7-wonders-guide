@@ -6,7 +6,7 @@ class Expansion(models.Model):
     description = models.CharField(max_length=8192)
 
     def __str__(self) -> str:
-        return self.name
+        return str(self.name)
 
     class Meta:
         ordering = ['name']
